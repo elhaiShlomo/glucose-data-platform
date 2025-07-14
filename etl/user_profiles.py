@@ -1,5 +1,4 @@
 
-
 USER_PROFILES = {
     "user_001": {"profile": "healthy", "mean": 95, "sigma": 10},
     "user_002": {"profile": "healthy", "mean": 100, "sigma": 15},

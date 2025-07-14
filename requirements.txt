@@ -1,6 +1,7 @@
-boto3
-pandas
+boto3~=1.34.149
+pandas~=2.2.2
 pyathena
 openai
 python-dotenv
 openai
+botocore~=1.34.149
