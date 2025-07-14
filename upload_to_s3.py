@@ -1,16 +1,18 @@
-
 import boto3
 from pathlib import Path
 import logging
 import pandas as pd
 from botocore.exceptions import ClientError
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 logger = logging.getLogger(__name__)
 
 # --- Config ---
-BUCKET_NAME = "cgm-data-pipeline"
+BUCKET_NAME = os.getenv("BUCKET_NAME")
 DATA_FOLDER = Path("data")
-AWS_PROFILE = "personal"
+AWS_PROFILE = os.getenv("AWS_PROFILE")
 
 # --- AWS session and client ---
 session = boto3.Session(profile_name=AWS_PROFILE)
