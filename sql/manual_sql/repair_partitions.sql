@@ -1,0 +1,1 @@
+MSCK REPAIR TABLE cgm_data;
